@@ -4,7 +4,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
-[![Last checked](https://img.shields.io/badge/last%20checked-2026--11--12-blue.svg)](#来源与致谢)
+[![Last checked](https://img.shields.io/badge/last%20checked-2026--11--18-blue.svg)](#来源与致谢)
 
 TVBox / 影视仓 / FongMi 影视 生态资源合集：客户端软件 · 配置接口 · 直播源 · 开发文档 · 实用工具
 
@@ -27,6 +27,7 @@ TVBox / 影视仓 / FongMi 影视 生态资源合集：客户端软件 · 配置
 - [配置接口](#配置接口)
   - [优选接口](#优选接口)
   - [备用接口](#备用接口)
+  - [多仓接口](#多仓接口)
   - [GitHub 接口仓库](#github-接口仓库)
   - [资源与导航站点](#资源与导航站点)
 - [直播源 IPTV](#直播源-iptv)
@@ -65,7 +66,7 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 > [!TIP]
 > - 中文域名接口在部分设备上无法输入或解析，可改用 Punycode 形式，例如 `饭太硬.net` → `xn--sss604efuw.net`、`肥猫.net` → `xn--z7x900a.net`，表格“说明”栏已标注对应的中文域名。
 > - “图片封装”指配置内容被藏在图片文件里，“加密”指配置内容经过编码加密，主流新版客户端都能自动识别；老版本加载失败时请升级客户端。
-> - 接口失效很常见，建议多备几条。下表状态为 2026-11-12 的抽检快照，仅代表当时能否访问。
+> - 接口失效很常见，建议多备几条。下表状态为 2026-11-18 的抽检快照，仅代表当时能否访问。
 
 ## 客户端软件
 
@@ -73,17 +74,20 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 
 | 项目 | 说明 | ⭐ | 最近更新 |
 |---|---|---|---|
-| [j4Uq/TVBoxOSC](https://github.com/j4Uq/TVBoxOSC) | TVBox 自动构建发布（原 o0HalfLife0o/TVBoxOSC），每日编译 takagen99/Box 与 q215613905/TVBoxOS 等分支 APK · [Releases](https://github.com/j4Uq/TVBoxOSC/releases) · [Telegram](https://t.me/TVBoxOSC) | 18.2k | 2026-11 |
-| [FongMi/TV](https://github.com/FongMi/TV) | 影視TV（FongMi 影视），Android TV、手机、平板通用：点播、直播、弹幕、DLNA 投放、网页遥控，支持 Java / Python / QuickJS 爬虫 · [使用指南](https://fongmi.github.io/TV/) · [安装包](https://github.com/FongMi/Release/releases) · [Telegram](https://t.me/fongmi_official) | 10.5k | 2026-11 |
+| [j4Uq/TVBoxOSC](https://github.com/j4Uq/TVBoxOSC) | TVBox 自动构建发布（原 o0HalfLife0o/TVBoxOSC），每日编译 takagen99/Box 与 q215613905/TVBoxOS 等分支 APK · [Releases](https://github.com/j4Uq/TVBoxOSC/releases) · [Telegram](https://t.me/TVBoxOSC) | 18.3k | 2026-11 |
+| [FongMi/TV](https://github.com/FongMi/TV) | 影視TV（FongMi 影视），Android TV、手机、平板通用：点播、直播、弹幕、DLNA 投放、网页遥控，支持 Java / Python / QuickJS 爬虫 · [使用指南](https://fongmi.github.io/TV/) · [安装包](https://github.com/FongMi/Release/releases) · [Telegram](https://t.me/fongmi_official) | 10.6k | 2026-11 |
 | [liu673cn/bug](https://github.com/liu673cn/bug) | TVBox 开源版空壳（已停更，存档参考） | 10.3k | 2023-12 |
 | [takagen99/Box](https://github.com/takagen99/Box) | TVBox 的 takagen99 分支 | 3.1k | 2026-02 |
 | [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) | TVBox 二开分支，README 附完整 JSON 配置示例 | 3k | 2026-11 |
 | [webhtv/webhtv](https://github.com/webhtv/webhtv) | WebHomeTV，基于 FongMi 二开，WebHome 自定义首页、网盘链接检测 · [Telegram](https://t.me/webhtv) | 1.9k | 2026-11 |
-| [XiaochangXu/AVBox](https://github.com/XiaochangXu/AVBox) | Material Design 3 全新设计的多平台 TVBox | 675 | 2026-11 |
-| [motao123/webtv](https://github.com/motao123/webtv) | 基于 FongMi / CatVod 二开的 Android TV 影音聚合客户端 | 201 | 2026-11 |
-| [xixu-me/fongmi-tv-actions-builder](https://github.com/xixu-me/fongmi-tv-actions-builder) | 用 GitHub Actions 自动编译并发布签名版 FongMi TV APK | 53 | 2026-10 |
-| [zongchenghuan0318/TVBox-fashion-UI](https://github.com/zongchenghuan0318/TVBox-fashion-UI) | Z影视，基于 TVBoxOSC 二开的多源聚合客户端 | 44 | 2026-11 |
-| [dhicoc/FusionTV-KitKat](https://github.com/dhicoc/FusionTV-KitKat) | 基于 OK影视 的 Android 4.4 (ARM32) 老电视优化版 | 11 | 2026-10 |
+| [XiaoRanLiu3119/TVBoxOS-Mobile](https://github.com/XiaoRanLiu3119/TVBoxOS-Mobile) | 基于 TVBoxOS 的手机竖屏适配版（已归档） | 1.6k | 2024-11 |
+| [Silent1566/webhtv](https://github.com/Silent1566/webhtv) | 基于 WebHomeTV 二开，支持 Python / JavaScript 源的 TMDB 海报与交互优化 | 824 | 2026-11 |
+| [XiaochangXu/AVBox](https://github.com/XiaochangXu/AVBox) | Material Design 3 全新设计的多平台 TVBox（已归档） | 734 | 2026-11 |
+| [motao123/webtv](https://github.com/motao123/webtv) | 基于 FongMi / CatVod 二开的 Android TV 影音聚合客户端 | 206 | 2026-11 |
+| [zongchenghuan0318/TVBox-fashion-UI](https://github.com/zongchenghuan0318/TVBox-fashion-UI) | Z影视，基于 TVBoxOSC 二开的多源聚合客户端 | 74 | 2026-11 |
+| [xixu-me/fongmi-tv-actions-builder](https://github.com/xixu-me/fongmi-tv-actions-builder) | 用 GitHub Actions 自动编译并发布签名版 FongMi TV APK | 54 | 2026-10 |
+| [cyj265/lanxing-vod](https://github.com/cyj265/lanxing-vod) | 揽星影视，兼容 TVBox JSON 接口的 Android 手机端播放器，支持多仓、直播 EPG 与 DLNA 投屏 | 15 | 2026-11 |
+| [dhicoc/FusionTV-KitKat](https://github.com/dhicoc/FusionTV-KitKat) | 基于 OK影视 的 Android 4.4 (ARM32) 老电视优化版 | 12 | 2026-10 |
 
 > 原版 TVBox 仓库 `CatVodTVOfficial/TVBoxOSC` 已删除，各分支的自动构建版可在 [j4Uq/TVBoxOSC Releases](https://github.com/j4Uq/TVBoxOSC/releases) 获取。
 
@@ -91,19 +95,25 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 
 | 项目 | 说明 | ⭐ | 最近更新 |
 |---|---|---|---|
-| [Hiram-Wong/zyfun](https://github.com/Hiram-Wong/zyfun) | zyfun（原 ZyPlayer），跨平台桌面视频播放器，支持 TVBox 类源 | 9.1k | 2026-06 |
-| [kknifer7/FreeBox](https://github.com/kknifer7/FreeBox) | TVBox 电脑版 / 姊妹软件，扩展 TVBox 生态到桌面 | 2.1k | 2026-07 |
-| [Greatwallcorner/TV-Multiplatform](https://github.com/Greatwallcorner/TV-Multiplatform) | 基于 FongMi/TV 的桌面版实现 | 718 | 2026-01 |
-| [hgtuj5688/tvbox-desktop](https://github.com/hgtuj5688/tvbox-desktop) | TVBox Desktop：极简 Windows 影视聚合客户端，可直接导入 TVBox 配置订阅，支持 M3U / TXT 直播 | 359 | 2026-09 |
-| [yagami-hue/Win-box](https://github.com/yagami-hue/Win-box) | Windows 版 TVBox | 350 | 2026-11 |
-| [yuluoos/TVBox-tvs](https://github.com/yuluoos/TVBox-tvs) | TVS：Flutter 空壳播放器（Android TV / iOS / iPadOS / macOS），仅支持羊壳（PeekPro）订阅与 M3U / TXT / JSON 直播源，不保证兼容 TVBox 配置 · [下载页](https://yuluoos.github.io/TVBox-tvs/) | 240 | 2026-11 |
-| [sky22333/sky-tv](https://github.com/sky22333/sky-tv) | 跨平台视频播放器，可导入自定义影视源与 IPTV 直播源 | 139 | 2026-10 |
-| [yaolin-dev/OKVideoMac](https://github.com/yaolin-dev/OKVideoMac) | 原生 macOS（Apple Silicon）IPTV / 点播播放器 | 124 | 2026-11 |
-| [cwe88108/free-new-desk-public](https://github.com/cwe88108/free-new-desk-public) | Windows 11 x64 的 TVBox / FongMi 风格桌面播放器 | 121 | 2026-10 |
-| [zhujinrun/FongMi-Player](https://github.com/zhujinrun/FongMi-Player) | 基于影视 APP 扩展的跨平台桌面播放器，解析主流 TVBox 源 | 32 | 2026-11 |
-| [LanLanff/FlyTV](https://github.com/LanLanff/FlyTV) | TVBox 电脑版（Windows），免安装绿色包，网盘播放 / 弹幕 / 历史同步 | 28 | 2026-11 |
-| [jianbinzhang1987/OKPlayer](https://github.com/jianbinzhang1987/OKPlayer) | 兼容 FongMi / TVBox 配置格式的跨平台桌面播放器 | 17 | 2026-11 |
-| [tengdechun/tvbox-desktop](https://github.com/tengdechun/tvbox-desktop) | TVBox / CatVod 兼容的 Windows 桌面客户端 | 12 | 2026-08 |
+| [Hiram-Wong/zyfun](https://github.com/Hiram-Wong/zyfun) | zyfun（原 ZyPlayer），跨平台桌面视频播放器，支持 TVBox 类源 | 9.2k | 2026-06 |
+| [gstory0404/Cinetry](https://github.com/gstory0404/Cinetry) | 跨平台多媒体播放器（Android / TV / iOS / Windows / macOS / Linux），支持 CMS、IPTV、WebDAV、AList / OpenList、Emby、Jellyfin · [官网](https://cinetry.gstory.cn) | 3.1k | 2026-09 |
+| [kknifer7/FreeBox](https://github.com/kknifer7/FreeBox) | TVBox 电脑版 / 姊妹软件，扩展 TVBox 生态到桌面 | 2.2k | 2026-07 |
+| [Greatwallcorner/TV-Multiplatform](https://github.com/Greatwallcorner/TV-Multiplatform) | 基于 FongMi/TV 的桌面版实现 | 717 | 2026-01 |
+| [hgtuj5688/tvbox-desktop](https://github.com/hgtuj5688/tvbox-desktop) | TVBox Desktop：极简 Windows 影视聚合客户端，可直接导入 TVBox 配置订阅，支持 M3U / TXT 直播 | 707 | 2026-09 |
+| [Ainanya21/AinanPlayer](https://github.com/Ainanya21/AinanPlayer) | 兼容 CatVod / TVBox 源的 Windows 11 原生 4K 硬解聚合播放器 | 554 | 2026-11 |
+| [jo32/tvbox-silicon](https://github.com/jo32/tvbox-silicon) | Yingxia（映霞）：原生 SwiftUI 的 Apple 全平台（Apple TV / iPhone / iPad / Mac）TVBox 播放器 · [官网](https://yingxia.getmegaportal.com) | 534 | 2026-11 |
+| [yagami-hue/Win-box](https://github.com/yagami-hue/Win-box) | Windows 版 TVBox | 353 | 2026-11 |
+| [yuluoos/TVBox-tvs](https://github.com/yuluoos/TVBox-tvs) | TVS：Flutter 空壳播放器（Android TV / iOS / iPadOS / macOS），仅支持羊壳（PeekPro）订阅与 M3U / TXT / JSON 直播源，不保证兼容 TVBox 配置 · [下载页](https://yuluoos.github.io/TVBox-tvs/) | 249 | 2026-11 |
+| [Jstrom2022/tvbox-Swift](https://github.com/Jstrom2022/tvbox-Swift) | 原生 Swift & SwiftUI 构建的 macOS / iOS TVBox 客户端 | 220 | 2026-10 |
+| [qfw66/xiugou-tv](https://github.com/qfw66/xiugou-tv) | 修狗TV：兼容 TVBox 配置的 Windows 桌面影视聚合播放器 | 204 | 2026-11 |
+| [teaGod-s/UnBox](https://github.com/teaGod-s/UnBox) | 基于 Go + Wails 的跨平台桌面播放器，兼容 TVBox / FongMi 源与 IPTV 直播，内嵌纯 Go JS 爬虫引擎 | 160 | 2026-11 |
+| [sky22333/sky-tv](https://github.com/sky22333/sky-tv) | 跨平台视频播放器，可导入自定义影视源与 IPTV 直播源 | 140 | 2026-10 |
+| [yaolin-dev/OKVideoMac](https://github.com/yaolin-dev/OKVideoMac) | 原生 macOS（Apple Silicon）IPTV / 点播播放器 | 128 | 2026-11 |
+| [cwe88108/free-new-desk-public](https://github.com/cwe88108/free-new-desk-public) | Windows 11 x64 的 TVBox / FongMi 风格桌面播放器 | 125 | 2026-10 |
+| [zhujinrun/FongMi-Player](https://github.com/zhujinrun/FongMi-Player) | 基于影视 APP 扩展的跨平台桌面播放器，解析主流 TVBox 源 | 33 | 2026-11 |
+| [LanLanff/FlyTV](https://github.com/LanLanff/FlyTV) | TVBox 电脑版（Windows），免安装绿色包，网盘播放 / 弹幕 / 历史同步 | 32 | 2026-11 |
+| [jianbinzhang1987/OKPlayer](https://github.com/jianbinzhang1987/OKPlayer) | 兼容 FongMi / TVBox 配置格式的跨平台桌面播放器 | 18 | 2026-11 |
+| [tengdechun/tvbox-desktop](https://github.com/tengdechun/tvbox-desktop) | TVBox / CatVod 兼容的 Windows 桌面客户端 | 16 | 2026-08 |
 | [shareu007/tvbox-Swift-macOS](https://github.com/shareu007/tvbox-Swift-macOS) | 原生 SwiftUI 的 TVBox 客户端（macOS / iOS） | 9 | 2026-10 |
 | [wj5403293/KOTV](https://github.com/wj5403293/KOTV) | Flutter / Go 跨端影视聚合客户端，兼容 CatVod 配置生态 | 6 | 2026-08 |
 
@@ -111,12 +121,17 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 
 | 项目 | 说明 | ⭐ | 最近更新 |
 |---|---|---|---|
-| [lizongying/my-tv](https://github.com/lizongying/my-tv) | 我的电视，安装即用的电视直播软件（2024 年后停更） | 32k | 2024-06 |
+| [lizongying/my-tv](https://github.com/lizongying/my-tv) | 我的电视，安装即用的电视直播软件（2024 年后停更） | 31.9k | 2024-06 |
+| [4gray/iptvnator](https://github.com/4gray/iptvnator) | 跨平台 IPTV 播放器（Windows / macOS / Linux / Web），支持 M3U、EPG 与回看 · [官网](https://4gray.github.io/iptvnator/) | 7.8k | 2026-11 |
+| [hxh19950701/WebViewTvLive](https://github.com/hxh19950701/WebViewTvLive) | 基于腾讯 X5 WebView 直接加载电视台官网直播页的 Android TV 直播软件 | 5.4k | 2026-09 |
 | [lizongying/my-tv-0](https://github.com/lizongying/my-tv-0) | 我的電視·〇，可自定义视频源的直播软件 | 4.7k | 2025-05 |
 | [mytv-android/mytv-android](https://github.com/mytv-android/mytv-android) | 天光云影，Material 3 Expressive 风格的 Android / Android TV 直播播放器 · [使用文档](https://mytv-android.github.io/mytv-doc/) | 3.1k | 2026-11 |
+| [Eanya-Tonic/CCTV_Viewer](https://github.com/Eanya-Tonic/CCTV_Viewer) | 电视浏览器：在机顶盒与 Android TV 上收看央视等网页直播的轻量软件 | 3k | 2025-05 |
 | [Kimentanm/aptv](https://github.com/Kimentanm/aptv) | APTV：Apple 全平台（iOS / iPadOS / tvOS / macOS / watchOS）直播播放器，支持 M3U、回看与节目单 · [App Store](https://apps.apple.com/cn/app/aptv/id1630403500) | 2.9k | 2026-11 |
 | [yaoxieyoulei/mytv-android](https://github.com/yaoxieyoulei/mytv-android) | 天光云影原项目（已归档） | 1.9k | 2025-09 |
-| [HTWMedia/HTV](https://github.com/HTWMedia/HTV) | 免费无广告的电视直播 App，手机与电视盒子通用 | 832 | 2026-11 |
+| [HTWMedia/HTV](https://github.com/HTWMedia/HTV) | 免费无广告的电视直播 App，手机与电视盒子通用 | 844 | 2026-11 |
+| [ahXN00/OwnTV](https://github.com/ahXN00/OwnTV) | 原生 Android TV IPTV 播放器（Compose for TV，ExoPlayer + mpv 双内核） · [Telegram](https://t.me/owntvplayer) | 830 | 2026-11 |
+| [buhanzhe/NativeWasmTv](https://github.com/buhanzhe/NativeWasmTv) | nTv：面向 Android 电视 / 盒子 / 平板的横屏直播播放器（兼容 Android 4.0+），支持 M3U / TXT、EPG 与回看 | 487 | 2026-11 |
 
 ### 盒子软件合集
 
@@ -158,7 +173,7 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 
 ## 配置接口
 
-将下表中的“接口地址”填入客户端的「配置地址」即可使用。状态说明：✅ 可访问（含 JSON、图片封装、加密三种形式）；⚠️ 连接受阻（HTTPS 握手失败，可能仅在特定网络下可用）；❌ 失效（域名无法解析或返回 404 / 403）。
+将下表中的“接口地址”填入客户端的「配置地址」即可使用。状态说明：✅ 可访问（含 JSON、图片封装、加密三种形式）；⚠️ 连接受阻（HTTPS 握手失败，可能仅在特定网络下可用）；❌ 失效（域名无法解析、拦截或返回 404 / 403）。
 
 ### 优选接口
 
@@ -168,12 +183,13 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 | 菜妮丝 | 常规线路，推荐瓜子、金牌等线路（即 `tv.菜妮丝.top`） | `https://tv.xn--yhqu5zs87a.top` | ✅ |
 | 饭太硬 | 混合线路，推荐荐片等线路 | `http://www.饭太硬.net/tv` | ✅ 图片封装 |
 | 肥猫 | 混合线路，推荐肥猫、瓜子、金牌等线路 | `http://肥猫.net/` | ✅ 加密 |
+| 无意云 | 混合线路，若不用网盘的话可以选排序靠后的线路，画质较高（原 `ym.wya6.cn` 已迁移） | `http://yc.wya6.cn/wykj.php` | ✅ 加密 |
+| 摸鱼儿 | 混合线路，免登录与 4K 线路丰富 | `http://www.y456y.com` | ✅ |
 | 少儿频道 | 常规线路，启蒙、少儿、小/初/高 | `https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer` | ✅ 图片封装 |
 | 俊哥 | 常规线路 | `http://home.jundie.top:81/top98.json` | ✅ |
 | 小盒子 | 常规线路 | `http://xhztv.top/xhz` | ✅ |
 | 4k云盘接口 | 混合线路，可用性较差 | `https://9xi4o.tk/0725.json` | ❌ 域名失效 |
-| 无意云 | 混合线路，若不用网盘的话可以选排序靠后的线路，画质较高 | `https://ym.wya6.cn/` | ❌ 域名失效 |
-| 欧歌接口 | 常规影视线路（即 `sd欧歌ds.v.nxog.top`） | `https://xn--sdds-rp5imh.v.nxog.top/apitv.php?id=3` | ⚠️ 连接受阻 |
+| 欧歌接口 | 常规影视线路（即 `sd欧歌ds.v.nxog.top`） | `https://xn--sdds-rp5imh.v.nxog.top/apitv.php?id=3` | ❌ 404 |
 
 ### 备用接口
 
@@ -185,9 +201,18 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 | 俊哥接口 | 常规线路 | `http://home.jundie.top:81/top98.json` | ✅ |
 | 欧歌免费 | 欧歌免费公用线路 | `https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv` | ⚠️ 连接受阻 |
 | 王二小接口 | 王二小备用线路（即 `tvbox.王二小放牛娃.top`） | `http://tvbox.xn--4kq62z5rby2qupq9ub.top/` | ✅ |
+| 王二小新站 | 王二小放牛娃新域名（即 `new.xn--4kq62z5rby2qupq9ub.top`） | `http://new.王二小放牛娃.top` | ✅ |
 | 王二小放牛娃 | 王二小网盘备用源 | `http://tv.999888987.xyz` | ✅ |
-| 饭太硬 | 混合线路，推荐荐片等线路 | `https://qist.wyfc.qzz.io/fty.json` | ✅ |
-| 潇洒 | 综合高清线路 | `https://qist.wyfc.qzz.io/xiaosa/api.json` | ✅ |
+| 饭太硬cc | 饭太硬备用域名（即 `www.xn--sss604efuw.cc`） | `http://www.饭太硬.cc/tv` | ✅ 图片封装 |
+| 肥猫备用 | 肥猫备用域名（即 `hello.xn--z7x900a.net`） | `http://hello.肥猫.net` | ✅ 加密 |
+| 小马 | 小马综合影视线路 | `https://szyyds.cn/tv/x.json` | ✅ |
+| 宝盒 | 常规线路，含相声评书、音乐、课堂等（即 `xn--6orr3pi6g9uu.top`） | `http://宝盒接口.top` | ✅ |
+| 嗷呜 | 嗷呜综合影视线路 | `https://9763.kstore.vip/aowu.json` | ✅ |
+| 真心 | 真心 FongMi 配置 | `https://www.252035.xyz/z/FongMi.json` | ✅ |
+| 香雅情 | 香雅情 XYQ 规则源 | `https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json` | ✅ |
+| 南风 | 南风 GitHub 托管源 | `https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json` | ✅ 加密 |
+| 饭太硬 | 混合线路，推荐荐片等线路 | `https://qist.wyfc.qzz.io/fty.json` | ❌ 域名拦截 |
+| 潇洒 | 综合高清线路 | `https://qist.wyfc.qzz.io/xiaosa/api.json` | ❌ 域名拦截 |
 | 牛二 | 网盘4K混合线路 | `https://9280.kstore.space/newwex.json` | ✅ |
 | uuccc | 通用影视线路（即 `影视仓.com`） | `http://xn--5mqx81b535a.com/` | ✅ |
 | fmys | 综合聚合线路 | `http://fmys.top/fmys.json` | ❌ 404 |
@@ -210,35 +235,53 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 | 66号GitCode源 | 国内Gitee类静态影视接口 | `https://raw.gitcode.com/jvftibcs-jbduyh/021/raw/main/18.json` | ❌ 403 |
 | 金鹰 | 金鹰影视专用聚合线路 | `http://550.3vcn.work/wdjyys.json` | ✅ |
 
+### 多仓接口
+
+适用于支持多仓库切换的客户端（如影视仓、OK影视、宝盒等），返回含 `urls` 数组的仓库列表。
+
+| 名称 | 说明 | 接口地址 | 状态 |
+|---|---|---|---|
+| 小盒子多仓 | 小盒子多仓聚合订阅 | `http://xhztv.top/dc` | ✅ |
+| 游魂多仓 | 游魂网络多仓订阅 | `https://www.iyouhun.com/tv/dc` | ✅ |
+| 拾光多仓 | 拾光趣乐屋多仓订阅 | `http://xmbjm.fh4u.org/dc.txt` | ✅ |
+| 挺好分享多仓 | 挺好分享观影多仓 | `http://ztha.top/TVBox/GYCK.json` | ✅ |
+| noimank 多仓 | GitLab 托管开源多仓配置 | `https://gitlab.com/noimank/tvbox/-/raw/main/tvboxmuti.json` | ✅ |
+| Lightconer 多仓 | GitHub Actions 每日自动更新多仓（经 gh-proxy 加速） | `https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%A4%9A%E4%BB%93%E8%AE%A2%E9%98%85.json` | ✅ |
+| TVBox.org 多仓 | TVBox.org 自动探测可用线路列表（经 gh-proxy 加速） | `https://gh-proxy.com/https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json` | ✅ |
+
 ### GitHub 接口仓库
 
 社区维护的配置仓库，通常在 README 中给出单仓 / 多仓地址，部分使用 GitHub Actions 自动更新。
 
 | 项目 | 说明 | ⭐ | 最近更新 |
 |---|---|---|---|
-| [qist/tvbox](https://github.com/qist/tvbox) | OK影视、TVBox 配置文件（多仓 / 单仓 / jar 合集） | 12.8k | 2026-11 |
+| [qist/tvbox](https://github.com/qist/tvbox) | OK影视、TVBox 配置文件（多仓 / 单仓 / jar 合集） | 13k | 2026-11 |
 | [gaotianliuyun/gao](https://github.com/gaotianliuyun/gao) | FongMi 影视与 TVBox 配置文件（2024 年后停更） | 8.2k | 2024-11 |
 | [2hacc/TVBox](https://github.com/2hacc/TVBox) | TVBox 网络接口（2024 年后停更） | 5.9k | 2024-12 |
-| [noimank/tvbox](https://github.com/noimank/tvbox) | 自用 TVBox 源、影视仓多仓源与相关资源记录 | 3.7k | 2026-08 |
+| [noimank/tvbox](https://github.com/noimank/tvbox) | 自用 TVBox 源、影视仓多仓源与相关资源记录 | 3.8k | 2026-08 |
 | [xianyuyimu/TVBOX-](https://github.com/xianyuyimu/TVBOX-) | 一木 TVBox 自用仓库 | 3.1k | 2026-09 |
-| [Zhou-Li-Bin/Tvbox-QingNing](https://github.com/Zhou-Li-Bin/Tvbox-QingNing) | 青柠：TVBox / 影视仓接口与直播源（单仓 / 多仓） · [官网](https://132130.com) | 2.1k | 2026-11 |
+| [Zhou-Li-Bin/Tvbox-QingNing](https://github.com/Zhou-Li-Bin/Tvbox-QingNing) | 青柠：TVBox / 影视仓接口与直播源（单仓 / 多仓） · [官网](https://132130.com) | 2.2k | 2026-11 |
 | [Dong-learn9/TVBox-zyjk](https://github.com/Dong-learn9/TVBox-zyjk) | TVBox 自用接口 | 1.6k | 2025-01 |
 | [jinenge/tvbox](https://github.com/jinenge/tvbox) | TVBox / 影视仓内置源，持续更新 | 1.2k | 2026-06 |
-| [xiongjian83/TvBox](https://github.com/xiongjian83/TvBox) | TVBox 接口 | 702 | 2026-11 |
-| [cluntop/tvbox](https://github.com/cluntop/tvbox) | TVBox 接口 / OK影视 | 675 | 2026-11 |
-| [yangxiaoge/tvbox_cust](https://github.com/yangxiaoge/tvbox_cust) | TVBox 自定义配置（作者声明仅自用） | 634 | 2026-11 |
-| [wuxierj/TVBox](https://github.com/wuxierj/TVBox) | TVBox、影视仓接口大全 | 418 | 2026-05 |
-| [Lightconer/tvbox-ysc-config](https://github.com/Lightconer/tvbox-ysc-config) | 影视仓 / TVBox 配置聚合，GitHub Actions 每日自动更新（肥猫 / 饭太硬 / 王二小等） | 397 | 2026-11 |
-| [kimwang1978/tvbox](https://github.com/kimwang1978/tvbox) | 自用影视仓 / TVBox 配置 | 396 | 2025-11 |
-| [CandyMuj/ResourceInterface](https://github.com/CandyMuj/ResourceInterface) | 各类资源软件接口合集（TVBox、阅读等） | 304 | 2026-11 |
+| [xiongjian83/TvBox](https://github.com/xiongjian83/TvBox) | TVBox 接口 | 705 | 2026-11 |
+| [cluntop/tvbox](https://github.com/cluntop/tvbox) | TVBox 接口 / OK影视 | 700 | 2026-11 |
+| [yangxiaoge/tvbox_cust](https://github.com/yangxiaoge/tvbox_cust) | TVBox 自定义配置（作者声明仅自用） | 637 | 2026-11 |
+| [lubin776/tvbox-api-backup](https://github.com/lubin776/tvbox-api-backup) | 基于 GitHub Actions 的 TVBox 接口自动抓取备份、直播源聚合与静态导航 | 469 | 2026-11 |
+| [Lightconer/tvbox-ysc-config](https://github.com/Lightconer/tvbox-ysc-config) | 影视仓 / TVBox 配置聚合，GitHub Actions 每日自动更新（肥猫 / 饭太硬 / 王二小等） | 450 | 2026-11 |
+| [wuxierj/TVBox](https://github.com/wuxierj/TVBox) | TVBox、影视仓接口大全 | 437 | 2026-05 |
+| [kimwang1978/tvbox](https://github.com/kimwang1978/tvbox) | 自用影视仓 / TVBox 配置 | 400 | 2025-11 |
+| [kukuqi666/TVboxOSC](https://github.com/kukuqi666/TVboxOSC) | TVBox 网络接口配置与导航页 | 354 | 2026-10 |
+| [CandyMuj/ResourceInterface](https://github.com/CandyMuj/ResourceInterface) | 各类资源软件接口合集（TVBox、阅读等） | 307 | 2026-11 |
 | [ne7359/tvurl](https://github.com/ne7359/tvurl) | OK影视、TVBox 配置文件 | 301 | 2026-11 |
-| [yoursmile66/TVBox](https://github.com/yoursmile66/TVBox) | TVBox 接口（json + jar + 直播源） | 258 | 2026-11 |
-| [niubihu1/tvbox](https://github.com/niubihu1/tvbox) | 牛虎 TVBox 聚合接口（单仓 / 多仓） | 225 | 2026-11 |
-| [mrgaoshuiquan/tvbox-config](https://github.com/mrgaoshuiquan/tvbox-config) | 基于"饭太硬"修改的自用配置 | 155 | 2026-08 |
-| [chendi0207/my-TVBOX](https://github.com/chendi0207/my-TVBOX) | 收集自网络的 TVBox 接口 | 150 | 2026-11 |
-| [TVboxorg/TVbox](https://github.com/TVboxorg/TVbox) | TVBox 接口汇总与可用性探测 · [官网](https://www.tvbox.org/) | 26 | 2026-11 |
-| [jiusanzhou/tvbox](https://github.com/jiusanzhou/tvbox) | 多站点配置合并为一个订阅链接 | 22 | 2026-11 |
+| [yoursmile66/TVBox](https://github.com/yoursmile66/TVBox) | TVBox 接口（json + jar + 直播源） | 259 | 2026-11 |
+| [niubihu1/tvbox](https://github.com/niubihu1/tvbox) | 牛虎 TVBox 聚合接口（单仓 / 多仓） | 242 | 2026-11 |
+| [mrgaoshuiquan/tvbox-config](https://github.com/mrgaoshuiquan/tvbox-config) | 基于"饭太硬"修改的自用配置 | 164 | 2026-08 |
+| [chendi0207/my-TVBOX](https://github.com/chendi0207/my-TVBOX) | 收集自网络的 TVBox 接口 | 151 | 2026-11 |
+| [FanchangWang/tvbox_config](https://github.com/FanchangWang/tvbox_config) | 基于 Python 的 TVBox 订阅自动解密、检测与合并仓库 | 35 | 2026-11 |
+| [TVboxorg/TVbox](https://github.com/TVboxorg/TVbox) | TVBox 接口汇总与可用性探测 · [官网](https://www.tvbox.org/) | 30 | 2026-11 |
+| [jiusanzhou/tvbox](https://github.com/jiusanzhou/tvbox) | 多站点配置合并为一个订阅链接 | 23 | 2026-11 |
 | [shengshimeiyan/fty44safe](https://github.com/shengshimeiyan/fty44safe) | Android 4.4 老盒子专用接口（无 spider jar，纯 type:1） | 12 | 2026-09 |
+| [zhuzhuyule/juhe-subhub](https://github.com/zhuzhuyule/juhe-subhub) | 零依赖的 TVBox / FongMi / 影视仓订阅每日自动体检与多仓 / 单仓拼装 | 12 | 2026-11 |
 | [dxyc0922/Tvbox4.x_api](https://github.com/dxyc0922/Tvbox4.x_api) | 适配安卓 4.x 老设备的 TVBox 接口 | 8 | 2026-11 |
 
 ### 资源与导航站点
@@ -247,7 +290,7 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 
 | 站点 | 说明 |
 |---|---|
-| [口袋猫](https://www.kdmao.com/category/tv) | 盒子软件长期更新 |
+| [口袋猫](https://www.kdmao.com/category/tv) | 盒子软件长期更新（电视分类现需登录查看） |
 | [小盒子工具箱](https://www.xhztv.pro/) | 软件、接口收集更新及制作 |
 | [江江TVBox](https://tv.xn--9swa.com/) | TvBox、IPTV接口收集（`tv.江江.com`） |
 | [硬核指南TvBox](https://yinghezhinan.com/tvbox-jsonlist/) | TvBox接口收集 |
@@ -258,6 +301,7 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 - [硬核指南 · 影视仓配置接口](https://yinghezhinan.com/yingshicang-jiekou/)：与上表“硬核指南TvBox”同站，按单仓 / 多仓整理并附说明。
 - [源仓库（yckceo）](https://www.yckceo.com/index/applist/tvbox.html)：TVBox 客户端介绍与多家接口资源汇总。
 - [资源收藏夹 · TV盒子与直播](https://zyscj.com/zy/video/tv.html)：人工整理的盒子软件、接口与直播源链接。
+- [星链接口发布中心](https://api.starlink.fan/)：影视仓 / TVBox 接口汇总与在线展示（对应仓库 [tv51818/TVbox](https://github.com/tv51818/TVbox)）。
 
 ## 直播源 IPTV
 
@@ -267,28 +311,32 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 
 | 项目 | 说明 | ⭐ | 最近更新 |
 |---|---|---|---|
-| [iptv-org/iptv](https://github.com/iptv-org/iptv) | 全球公开 IPTV 频道合集（按国家 / 语言 / 分类） · [官网](https://iptv-org.github.io) | 143.8k | 2026-11 |
+| [iptv-org/iptv](https://github.com/iptv-org/iptv) | 全球公开 IPTV 频道合集（按国家 / 语言 / 分类） · [官网](https://iptv-org.github.io) | 144.2k | 2026-11 |
 | [imDazui/Tvlist-awesome-m3u-m3u8](https://github.com/imDazui/Tvlist-awesome-m3u-m3u8) | 直播源相关资源汇总（IPTV、M3U） | 30.4k | 2025-11 |
-| [fanmingming/live](https://github.com/fanmingming/live) | 可直连访问的电视 / 广播台标库及相关工具 · [官网](https://live.fanmingming.com/) | 28.8k | 2026-11 |
-| [Guovin/iptv-api](https://github.com/Guovin/iptv-api) | IPTV 直播源自动更新工具：采集、测速、生成 M3U / TXT，支持 Docker / Actions · [文档](https://guovin.github.io/iptv-api/) | 26.1k | 2026-10 |
+| [fanmingming/live](https://github.com/fanmingming/live) | 可直连访问的电视 / 广播台标库及相关工具 · [官网](https://live.fanmingming.com/) | 28.9k | 2026-11 |
+| [Guovin/iptv-api](https://github.com/Guovin/iptv-api) | IPTV 直播源自动更新工具：采集、测速、生成 M3U / TXT，支持 Docker / Actions · [文档](https://guovin.github.io/iptv-api/) | 26.2k | 2026-10 |
 | [YanG-1989/m3u](https://github.com/YanG-1989/m3u) | 直播源 | 11.5k | 2026-09 |
-| [vbskycn/iptv](https://github.com/vbskycn/iptv) | 最新可用直播源，支持 IPv4 / IPv6 · [官网](https://live.zbds.top/) | 10.3k | 2026-11 |
+| [vbskycn/iptv](https://github.com/vbskycn/iptv) | 最新可用直播源，支持 IPv4 / IPv6 · [官网](https://live.zbds.top/) | 10.4k | 2026-11 |
 | [joevess/IPTV](https://github.com/joevess/IPTV) | 自动整合多来源直播源并择优（2024 年后停更） | 10.3k | 2024-12 |
 | [HerbertHe/iptv-sources](https://github.com/HerbertHe/iptv-sources) | 自动更新的 IPTV 源 · [官网](https://m3u.ibert.me/) | 9.1k | 2026-11 |
 | [ngo5/IPTV](https://github.com/ngo5/IPTV) | IPv4 / IPv6 TVBox 直播点播源收集 | 6.3k | 2026-08 |
 | [suxuang/myIPTV](https://github.com/suxuang/myIPTV) | 高清直播源，内置台标与节目预告 | 5.1k | 2026-09 |
 | [dongyubin/IPTV](https://github.com/dongyubin/IPTV) | 每月更新的直播源（含体育） | 4.7k | 2026-11 |
+| [Meroser/IPTV](https://github.com/Meroser/IPTV) | 集成高清台标与深度匹配 EPG 的直播源列表模板 | 4.2k | 2026-03 |
 | [yuanzl77/IPTV](https://github.com/yuanzl77/IPTV) | 每天自动更新的直播源，IPv4 / IPv6 | 2.1k | 2026-09 |
+| [hujingguang/ChinaIPTV](https://github.com/hujingguang/ChinaIPTV) | 定时自动拉取更新的国内电视直播源（M3U8） | 2.1k | 2026-11 |
+| [xisohi/CHINA-IPTV](https://github.com/xisohi/CHINA-IPTV) | 运营商 IPTV 直播源汇总与组播抓包指南 · [官网](https://chinaiptv.pages.dev/) | 2.1k | 2026-11 |
+| [akiralereal/iptv](https://github.com/akiralereal/iptv) | 自托管 IPTV 直播源管理与分发系统 | 2.1k | 2026-11 |
 | [ssili126/tv](https://github.com/ssili126/tv) | 自动收集并测速的 IPv4 酒店直播源，每日更新 | 2k | 2026-11 |
 | [kimwang1978/collect-txt](https://github.com/kimwang1978/collect-txt) | 自动整理的直播源（TXT） | 2k | 2026-11 |
-| [akiralereal/iptv](https://github.com/akiralereal/iptv) | 自托管 IPTV 直播源管理与分发系统 | 2k | 2026-11 |
 | [BurningC4/Chinese-IPTV](https://github.com/BurningC4/Chinese-IPTV) | 央视 / 卫视 IPv4 列表 | 1.7k | 2026-10 |
-| [YueChan/Live](https://github.com/YueChan/Live) | 收集于互联网的高清直播源 | 1.5k | 2026-11 |
+| [YueChan/Live](https://github.com/YueChan/Live) | 收集于互联网的高清直播源 | 1.6k | 2026-11 |
 | [Supprise0901/TVBox_live](https://github.com/Supprise0901/TVBox_live) | 直播源检索、测速、优选 | 1.1k | 2026-11 |
-| [zwc456baby/iptv_alive](https://github.com/zwc456baby/iptv_alive) | IPTV 直播源、4K 点播源地址 | 726 | 2026-11 |
-| [CCSH/IPTV](https://github.com/CCSH/IPTV) | 直播源、台标、EPG 自动采集同步工具 | 551 | 2026-11 |
-| [zhi35/iptv](https://github.com/zhi35/iptv) | 每天自动更新的直播源，IPv4 / IPv6 | 480 | 2026-11 |
-| [fuxinyi0505/Ku9-IPTV-source](https://github.com/fuxinyi0505/Ku9-IPTV-source) | 适用于酷9 / 天光云影 / OK影视的直播源 | 109 | 2026-07 |
+| [best-fan/iptv-sources](https://github.com/best-fan/iptv-sources) | 每日检测更新的国内电视直播源（M3U） | 1k | 2026-11 |
+| [zwc456baby/iptv_alive](https://github.com/zwc456baby/iptv_alive) | IPTV 直播源、4K 点播源地址 | 734 | 2026-11 |
+| [CCSH/IPTV](https://github.com/CCSH/IPTV) | 直播源、台标、EPG 自动采集同步工具 | 561 | 2026-11 |
+| [zhi35/iptv](https://github.com/zhi35/iptv) | 每天自动更新的直播源，IPv4 / IPv6 | 482 | 2026-11 |
+| [fuxinyi0505/Ku9-IPTV-source](https://github.com/fuxinyi0505/Ku9-IPTV-source) | 适用于酷9 / 天光云影 / OK影视的直播源 | 111 | 2026-07 |
 
 ### EPG 节目单与台标
 
@@ -296,8 +344,8 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 |---|---|---|---|
 | [iptv-org/epg](https://github.com/iptv-org/epg) | EPG 节目单抓取工具（XMLTV） | 3.5k | 2026-11 |
 | [taksssss/iptv-tool](https://github.com/taksssss/iptv-tool) | IPTV 工具箱（Docker）：EPG、直播源与台标管理，兼容 DIYP / 百川、超级直播与 XMLTV 格式 | 1.2k | 2026-10 |
-| [suzukua/epg](https://github.com/suzukua/epg) | IPTV 节目单（XMLTV），支持 7 天回看与 5 天预告，每日至少更新两次 · [官网](https://epg.zsdc.eu.org/) | 189 | 2026-11 |
-| [kuke31/xmlgz](https://github.com/kuke31/xmlgz) | 国内 EPG 节目单 | 68 | 2026-11 |
+| [suzukua/epg](https://github.com/suzukua/epg) | IPTV 节目单（XMLTV），支持 7 天回看与 5 天预告，每日至少更新两次 · [官网](https://epg.zsdc.eu.org/) | 194 | 2026-11 |
+| [kuke31/xmlgz](https://github.com/kuke31/xmlgz) | 国内 EPG 节目单 | 69 | 2026-11 |
 | [mytv-android/myEPG](https://github.com/mytv-android/myEPG) | 天光云影项目的聚合 EPG（epg.xml / epg.gz，附 Gitee 镜像） | 41 | 2026-11 |
 | [plsy1/epg](https://github.com/plsy1/epg) | 定时从 IPTV 提供商抓取的 EPG | 26 | 2026-11 |
 | [xjm1285/epg-server](https://github.com/xjm1285/epg-server) | 把 EPG 节目单转换成 TVBox 可用的接口 | 2 | 2026-02 |
@@ -305,7 +353,7 @@ TVBox 是一款开源的 Android 电视盒子影视软件，最早由 `CatVodTVO
 在线 EPG 服务：
 
 - [老张的 EPG](https://epg.51zmt.top:8001/)：2019 年起维护的国内节目单，每天早上更新；XMLTV：`https://epg.51zmt.top:8001/e.xml.gz`，另提供 DIYP 接口。
-- [112114 EPG](https://epg.112114.xyz/)：免费无广告；XMLTV：`https://epg.112114.xyz/pp.xml`，另提供 DIYP / 百川、超级直播接口，可自助添加节目、上传台标。
+- [112114 EPG](https://epg.112114.xyz/)：免费无广告（部分网络下偶有连接超时）；XMLTV：`https://epg.112114.xyz/pp.xml`，另提供 DIYP / 百川、超级直播接口，可自助添加节目、上传台标。
 - [epg.pw](https://epg.pw/)：全球节目单服务；中国频道 XMLTV：`https://epg.pw/xmltv/epg_CN.xml`。
 
 ## 开发与文档
@@ -400,16 +448,18 @@ https://example.com/cctv1.m3u8
 
 | 项目 | 说明 | ⭐ | 最近更新 |
 |---|---|---|---|
-| [FongMi/CatVodSpider](https://github.com/FongMi/CatVodSpider) | FongMi 官方爬虫开发模板与示例（Java / Python / QuickJS） | 951 | 2026-11 |
-| [hjdhnx/dr_py](https://github.com/hjdhnx/dr_py) | drpy（道长）：网页转 CMS 接口的规则引擎（已归档） · [文档](https://hjdhnx.github.io/dr_py/) | 779 | 2024-05 |
+| [FongMi/CatVodSpider](https://github.com/FongMi/CatVodSpider) | FongMi 官方爬虫开发模板与示例（Java / Python / QuickJS） | 955 | 2026-11 |
+| [hjdhnx/dr_py](https://github.com/hjdhnx/dr_py) | drpy（道长）：网页转 CMS 接口的规则引擎（已归档） · [文档](https://hjdhnx.github.io/dr_py/) | 778 | 2024-05 |
 | [jadehh/TVSpider](https://github.com/jadehh/TVSpider) | 影视 / 猫影视爬虫仓库 | 700 | 2024-09 |
-| [bizhangjie/CatVodSpider](https://github.com/bizhangjie/CatVodSpider) | TVBox 自定义源接口（CatVodSpider） | 542 | 2025-10 |
-| [sec-an/TV_Spider](https://github.com/sec-an/TV_Spider) | TVBoxOSC 服务端爬虫（T4 / Custom Server Spider） | 295 | 2025-08 |
+| [bizhangjie/CatVodSpider](https://github.com/bizhangjie/CatVodSpider) | TVBox 自定义源接口（CatVodSpider） | 545 | 2025-10 |
+| [sec-an/TV_Spider](https://github.com/sec-an/TV_Spider) | TVBoxOSC 服务端爬虫（T4 / Custom Server Spider） | 294 | 2025-08 |
 | [syzxasdc/CatVodTVSpider1](https://github.com/syzxasdc/CatVodTVSpider1) | 猫影视 / TVBox / FongMi 自定义爬虫开发调试项目 | 90 | 2024-04 |
-| [kknifer7/CatVodSpider-PC](https://github.com/kknifer7/CatVodSpider-PC) | 适配电脑端的猫影视 / TVBox Spider 模板 | 56 | 2025-11 |
+| [Hululu007/drpy-node](https://github.com/Hululu007/drpy-node) | drpyS：基于 Node.js 的异步服务端 drpy 实现，自带全屏源编辑器与直播转换工具 | 78 | 2026-03 |
+| [kknifer7/CatVodSpider-PC](https://github.com/kknifer7/CatVodSpider-PC) | 适配电脑端的猫影视 / TVBox Spider 模板 | 58 | 2025-11 |
+| [hjdhnx/drpy-node-skill](https://github.com/hjdhnx/drpy-node-skill) | 面向 AI Agent 的 drpyS 源创建、修复、调试与全流程验证技能包 | 58 | 2026-09 |
 | [feg545/maccms10-tvbox-api](https://github.com/feg545/maccms10-tvbox-api) | 苹果 CMS v10 对接 TVBox 接口 | 49 | 2024-08 |
 | [hjdhnx/drpy-node-house](https://github.com/hjdhnx/drpy-node-house) | drpyS（drpy-node）源仓库 | 25 | 2026-04 |
-| [hjdhnx/drpy3](https://github.com/hjdhnx/drpy3) | drpy3：下一代源规则引擎 | 24 | 2026-10 |
+| [hjdhnx/drpy3](https://github.com/hjdhnx/drpy3) | drpy3：下一代源规则引擎 | 25 | 2026-10 |
 | [hjdhnx/drpy-plugin](https://github.com/hjdhnx/drpy-plugin) | drpyS 插件库（Go 编译跨平台二进制） | 20 | 2026-10 |
 | [litan1016/spider-craft](https://github.com/litan1016/spider-craft) | 影视源开发技能包：TVBox / T4 / drpy / WebHome 全流程 | 16 | 2026-09 |
 
@@ -419,19 +469,25 @@ https://example.com/cctv1.m3u8
 |---|---|---|---|
 | [power721/alist-tvbox](https://github.com/power721/alist-tvbox) | AList 代理服务，让 TVBox 播放网盘资源（小雅） | 3.2k | 2026-11 |
 | [wukongdaily/tvhelper-docker](https://github.com/wukongdaily/tvhelper-docker) | 用电脑 / NAS 上的 Docker 给电视盒子 ADB 装软件 | 1.1k | 2026-03 |
-| [hl128k/tvbox](https://github.com/hl128k/tvbox) | 接口域名替换工具 | 820 | 2026-10 |
-| [wangrongding/tv-fresh](https://github.com/wangrongding/tv-fresh) | 小米电视去广告 / 清理预装 / 换桌面 / 装影视仓（免 root、可逆） | 773 | 2026-10 |
-| [fish2018/tvbox](https://github.com/fish2018/tvbox) | 接口私有化：把 json / jar 保存到自己的 Git 仓库 | 327 | 2025-04 |
+| [hl128k/tvbox](https://github.com/hl128k/tvbox) | 接口域名替换工具 | 819 | 2026-10 |
+| [wangrongding/tv-fresh](https://github.com/wangrongding/tv-fresh) | 小米电视去广告 / 清理预装 / 换桌面 / 装影视仓（免 root、可逆） | 792 | 2026-10 |
+| [fish2018/tvbox](https://github.com/fish2018/tvbox) | 接口私有化：把 json / jar 保存到自己的 Git 仓库 | 331 | 2025-04 |
+| [fe-spark/EcoHub](https://github.com/fe-spark/EcoHub) | 多源影视采集聚合自建系统，支持输出 TVBox 接口 · [官网](https://eco.fe-spark.cn) | 253 | 2026-11 |
+| [openmynet/tvboxsp](https://github.com/openmynet/tvboxsp) | TVBox 视频源批量有效性检测与合并桌面工具（Tauri） | 128 | 2024-03 |
+| [puermilk/aimimang](https://github.com/puermilk/aimimang) | 爱迷茫：飞牛影视（fnOS）在线源插件，提供 TVBox 式搜索 / 选集 / 播放（内置 drpy2 + QuickJS） | 27 | 2026-11 |
 | [drizzle888/CatVodTVJsonEditor](https://github.com/drizzle888/CatVodTVJsonEditor) | 猫影视 TV 配置编辑器（早期） | 19 | 2021-12 |
 | [outlook84/openlist-tvbox-gateway](https://github.com/outlook84/openlist-tvbox-gateway) | OpenList / AList / WebDAV → TVBox 网关 | 12 | 2026-09 |
-| [eastar23/tvbox-manager](https://github.com/eastar23/tvbox-manager) | 把多个接口聚合成多仓 json 并生成链接 | 9 | 2026-04 |
+| [eastar23/tvbox-manager](https://github.com/eastar23/tvbox-manager) | 把多个接口聚合成多仓 json 并生成链接 | 10 | 2026-04 |
 | [hnlyzxf/tvbox-api-jm](https://github.com/hnlyzxf/tvbox-api-jm) | TVBox 接口解密 | 3 | 2026-07 |
 | [JinC-Lab/TVBox-Editor](https://github.com/JinC-Lab/TVBox-Editor) | TVBox 接口编辑器 | 2 | 2026-04 |
 
 在线工具：
 
 - [肥猫接口解密](http://xn--z7x900a.net/tool)（`肥猫.net/tool`）：填入接口地址或粘贴密文即可解密，也支持加密与下载 Jar / 本地包。
+- [FongMi / TVBox 配置接口解密](https://ua.fongmi.eu.org/)：在线解密加密接口与图片隐写接口，支持携带客户端 UA 请求。
 - [饭太硬加密接口解析](https://fty.888484.xyz/jm/)：解析提取加密的配置接口（域名同上文“饭太硬备用”接口）。
+- [szyyds TVBox 接口解密](https://j.szyyds.cn/)：在线解析还原加密的 TVBox 配置。
+- [肥羊直播/点播工具集合](https://tools.v1.mk/)：含 TVBox 接口解密、M3U / TXT 直播源转换等在线工具。
 - [秋水网 TVBox 接口解密](https://www.qiushui.vip/gj/jiemi/)：在线解密配置接口。
 - [TVBox 配置编辑器](https://z.qiqiv.cn/)：可视化 / 源码两种模式编辑配置，支持配置转图片。
 - [M3U 列表格式转换](https://sankei.mo/z.html)：直播源 TXT 与 M3U 格式互转，在浏览器本地完成。
@@ -452,14 +508,14 @@ https://example.com/cctv1.m3u8
 
 | 项目 | 说明 | ⭐ | 最近更新 |
 |---|---|---|---|
-| [youhunwl/TVAPP](https://github.com/youhunwl/TVAPP) | 全网 Android TV 盒子应用合集（影视、直播、K 歌、工具等） · [官网](https://app.iyouhun.com) | 28.2k | 2026-11 |
-| [laoma528/awesome-zhuiju-free](https://github.com/laoma528/awesome-zhuiju-free) | 免费无广告追剧资源指南（含 TVBox 空壳 / 配置 / IPTV） · [官网](https://zhuiju.me) | 15.4k | 2026-11 |
+| [youhunwl/TVAPP](https://github.com/youhunwl/TVAPP) | 全网 Android TV 盒子应用合集（影视、直播、K 歌、工具等） · [官网](https://app.iyouhun.com) | 28.8k | 2026-11 |
+| [laoma528/awesome-zhuiju-free](https://github.com/laoma528/awesome-zhuiju-free) | 免费无广告追剧资源指南（含 TVBox 空壳 / 配置 / IPTV） · [官网](https://zhuiju.me) | 15.9k | 2026-11 |
 | [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) | IPTV 资源 awesome 清单（英文） | 12.9k | 2026-11 |
 
 ## 来源与致谢
 
-- 资源收集自公开网页、GitHub 与社区分享，网站、教程与工具均于 2026-11-12 逐条打开核实。
-- 接口状态由脚本于 2026-11-12 抽检（User-Agent `okhttp/3.15`，失败项经 DNS over HTTPS 复核）；GitHub 项目的 Star 数与最近更新时间通过 GitHub API 于同日获取。
+- 资源收集自公开网页、GitHub 与社区分享，网站、教程与工具均于 2026-11-18 逐条打开核实。
+- 接口状态由脚本于 2026-11-18 抽检（User-Agent `okhttp/3.15`，失败项经 DNS over HTTPS 复核）；GitHub 项目的 Star 数与最近更新时间通过 GitHub API 于同日获取。
 - 感谢所有开源作者、接口维护者与资源整理者。
 
 ## 参与贡献
